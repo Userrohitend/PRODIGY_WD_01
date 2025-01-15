@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Menu */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #navbar ul li {
+    margin: 0 20px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  #navbar.scrolled {
+    background-color: #222;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../assets/cafe.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(0, 42, 132);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Sections */
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Menu */
+  #menu .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .menu-item img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
